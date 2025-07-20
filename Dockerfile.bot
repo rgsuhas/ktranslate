@@ -1,0 +1,12 @@
+FROM python:3.10-slim-buster
+
+WORKDIR /app
+
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+COPY . .
+
+ENV TELEGRAM_BOT_TOKEN="your_token_here" # Replace with actual token or use Docker secrets
+
+CMD ["python", "run_bot.py"]
