@@ -1,6 +1,5 @@
 from langdetect import detect
 from core.translation_engine import TranslationEngine
-from services import google_translate # Keep for now, will be replaced by engine instance
 from bot.session_state import get_user_lang # Import get_user_lang
 
 class LanguageRouter:

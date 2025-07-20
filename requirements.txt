@@ -17,7 +17,6 @@ sentencepiece
 langdetect
 beautifulsoup4
 
-# Optional
-python-dotenv
-requests
 pydantic
+pydantic-settings
+requests

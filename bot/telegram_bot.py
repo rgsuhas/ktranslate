@@ -74,13 +74,10 @@ _{translated}_
         logger.error(f"Translation error for user {user_id} (message: '{text}'): {e}")
         await update.message.reply_text("⚠️ Sorry, translation failed. Try again later.")
 
-def launch_bot():
-    load_dotenv()
-
-    token = os.getenv("TELEGRAM_BOT_TOKEN")
+def launch_bot(token: str):
     if not token:
-        logger.error("TELEGRAM_BOT_TOKEN not found in .env file or environment variables.")
-        print("Error: TELEGRAM_BOT_TOKEN not found in .env file or environment variables.")
+        logger.error("TELEGRAM_BOT_TOKEN not provided.")
+        print("Error: TELEGRAM_BOT_TOKEN not provided.")
         print("Please set the token before running the bot.")
         return
 
