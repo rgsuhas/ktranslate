@@ -1,0 +1,23 @@
+# Core
+python-telegram-bot==20.7
+fastapi==0.110.0
+uvicorn==0.29.0
+httpx[http2]==0.25.2
+httpcore[asyncio,uvloop]==1.0.5
+
+# Translation APIs
+deep-translator
+transformers
+torch==2.2.2+cpu
+--extra-index-url https://download.pytorch.org/whl/cpu
+indic-transliteration
+sentencepiece
+
+# Language utilities
+langdetect
+beautifulsoup4
+
+# Optional
+python-dotenv
+requests
+pydantic
