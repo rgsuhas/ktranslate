@@ -79,10 +79,3 @@ uvicorn api.main:app --reload
 
 ---
 
-## ✅ Developer Checklist
-
-- [ ] Code is modular and tested.
-- [ ] `.env` file is included in `.gitignore` and is not committed.
-- [ ] All translation services in the `services/` directory adhere to a common `translate(text, source_language, target_language)` interface.
-- [ ] Add new test phrases to `data/test_phrases.csv` to improve evaluation benchmarks.
-- [ ] (Optional) Log important events and messages to the database if persistence is enabled.
