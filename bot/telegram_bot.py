@@ -5,14 +5,14 @@ from dotenv import load_dotenv
 import logging
 
 from core.language_router import LanguageRouter
-from services.indictrans2_service import IndicTransService
+from services.google_translate import GoogleTranslateService # Assuming GoogleTranslateService is the default
 from bot.session_state import set_user_lang, get_user_lang
 
 # Get logger for this module
 logger = logging.getLogger(__name__)
 
 # Initialize the router globally
-translation_engine = IndicTransService()
+translation_engine = GoogleTranslateService()
 router = LanguageRouter(engine=translation_engine)
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
