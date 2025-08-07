@@ -10,6 +10,40 @@
 </p>
 
 ---
+## Setup Instructions
+
+### 1. Install Dependencies
+```bash
+python -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+```
+
+### 2. Environment Variables
+Create a `.env` file in the root directory or configure your environment variables in `config/settings.py`.
+
+```ini
+# .env file
+GOOGLE_API_KEY="your_key_here"
+INDIC_MODEL_PATH="/path/to/your/model"
+BHASHINI_API_KEY="your_key_here"
+TELEGRAM_BOT_TOKEN="your_telegram_bot_token"
+```
+
+### 3. Run the Application
+
+**To run the Telegram Bot:**
+```bash
+python run_bot.py
+```
+
+**(Optional) To run the FastAPI Server:**
+```bash
+uvicorn api.main:app --reload
+```
+
+
+---
 ## Project Structure
 
 ```
@@ -53,38 +87,6 @@ ktranslate/
 ├── requirements.txt                # Python dependencies
 ├── README.md                       # Project overview and usage instructions
 └── run_bot.py                      # Main entry point to launch bot (Telegram by default)
-```
----
-## Setup Instructions
-
-### 1. Install Dependencies
-```bash
-python -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
-```
-
-### 2. Environment Variables
-Create a `.env` file in the root directory or configure your environment variables in `config/settings.py`.
-
-```ini
-# .env file
-GOOGLE_API_KEY="your_key_here"
-INDIC_MODEL_PATH="/path/to/your/model"
-BHASHINI_API_KEY="your_key_here"
-TELEGRAM_BOT_TOKEN="your_telegram_bot_token"
-```
-
-### 3. Run the Application
-
-**To run the Telegram Bot:**
-```bash
-python run_bot.py
-```
-
-**(Optional) To run the FastAPI Server:**
-```bash
-uvicorn api.main:app --reload
 ```
 
 ---
