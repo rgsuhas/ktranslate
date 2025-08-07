@@ -1,4 +1,16 @@
-##  Kannada Translation Bot – Project Structure
+## Translation Bot (EN-HN-KN)
+
+
+## Image gallery 
+
+<p float="left">
+  <img src="img/img1.jpg" width="250" />
+  <img src="img/img2.jpg" width="250" /> 
+  <img src="img/img3.jpg" width="250" />
+</p>
+
+---
+## Project Structure
 
 ```
 ktranslate/
@@ -42,17 +54,6 @@ ktranslate/
 ├── README.md                       # Project overview and usage instructions
 └── run_bot.py                      # Main entry point to launch bot (Telegram by default)
 ```
-
----
-
-## Image gallery 
-
-<p float="left">
-  <img src="img/img1.jpg" width="250" />
-  <img src="img/img2.jpg" width="250" /> 
-  <img src="img/img3.jpg" width="250" />
-</p>
-
 ---
 ## Setup Instructions
 
